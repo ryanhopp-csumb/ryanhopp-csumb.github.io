@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory</title>
+    <title>Memory Management</title>
+    <link rel="stylesheet" href="homework_styles.css">
 </head>
 <body>
     <h1>Memory Management</h1>
+    <br>
+    <p>For memory management, each computer has a virtual address space and a physical address space.<br>
+        Any process that can access memory only gets to see a set of virtual addresses and no physical addresses.<br>
+        This means that processes can use more memory than the computer physically has with no issue.<br>
+        However, this also means that we have to keep some way of translating the virtual addresses to physical addresses.<br>
+        There are a few different approaches to doing this address translation, <strong>such as:</strong>
+        <li>
+            <ol><strong>Base and bounds</strong> - All virtual addresses for a process are between a base and a bounds.</ol>
+            <ol><strong>Segmentation</strong> - Processes get different segments of memory for their virtual address space.</ol>
+            <ol><strong>Paging</strong> - Every process gets some number of memory pages to use, all virtual addresses are on the page(s) given.</ol>
+        </li>
+    </p>
+    <br>
+    <button><a href="index.html">Home</a></button>
+    <button><a href="scheduling.html">Process Scheduling</a></button>
+    <button><a href="concurrency.html">Concurrency</a></button>
+    <button><a href="security.html">Security</a></button>
 </body>
 </html>
