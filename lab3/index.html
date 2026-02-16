@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: Pop Quiz</title>
+    <script src="https://unpkg.com/underscore@1.13.7/underscore-umd-min.js"></script>
+    <script src="js/quiz_script.js" defer></script>
+</head>
+<body>
+    <h1>CSS Quiz</h1>
+    <label>
+        1. What is one color in RGB?
+    </label>
+    <br>
+    <br>
+    <label><input type="radio" id="violet" name="q1" value="violet">Violet</label>
+    <label><input type="radio" id="cyan" name="q1" value="cyan">Cyan</label>
+    <label><input type="radio" id="yellow" name="q1" value="yellow">Yellow</label>
+    <label><input type="radio" id="red" name="q1" value="red">Red</label>
+    <br>
+    <div> </div>
+    <!-- <div id="q1ChoiceDiv"></div> -->
+    <br>
+    <br>
+    <label>
+        2. What is one of the primary colors?
+        <br>
+        <br>
+        <select id="q2">
+            <option> Select an option </option>
+            <option> Blue </option>
+            <option> Green </option>
+            <option> Orange </option>
+        </select>
+    </label>
+    <br>
+    <div> </div>
+    <br>
+    <br>
+    <label>
+        3. What color is a combination of red and blue?
+        <input id="q3" type="text">
+    </label>
+    <br>
+    <div> </div>
+    <br>
+    <br>
+    <label>
+        4. What is the maximum value a color can have?
+        <input id="q4" type="number" min="0" max="255" step="15">
+    </label>
+    <br>
+    <div> </div>
+    <br>
+    <br>
+    <button>Submit Quiz</button>
+</body>
+</html>

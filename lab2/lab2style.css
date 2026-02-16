@@ -1,10 +1,17 @@
 h1 {
     text-align: center;
     font-family: Verdana;
-    color: black;
+    color: lightgray;
+    background-color: rgb(64, 10, 140);
 }
 
 body {
-    font-family: Arial;
+    font-family: 'Tahoma';
     text-align: center;
+}
+
+#guessMain {
+    background-color: rgb(194, 240, 255);
+    padding: 50px;
+    display: inline-block;
 }
