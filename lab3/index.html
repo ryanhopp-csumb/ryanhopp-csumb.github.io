@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 3: Pop Quiz</title>
+    <title>Lab 3: RGB Colors Quiz</title>
+    <link rel="stylesheet" href="css/lab3_style.css">
     <script src="https://unpkg.com/underscore@1.13.7/underscore-umd-min.js"></script>
     <script src="js/quiz_script.js" defer></script>
 </head>
 <body>
-    <h1>CSS Quiz</h1>
-    <label>
+    <h1>RGB Colors Quiz</h1>
+    <label class="questions">
         1. What is one color in RGB?
     </label>
     <br>
     <br>
-    <label><input type="radio" id="violet" name="q1" value="violet">Violet</label>
-    <label><input type="radio" id="cyan" name="q1" value="cyan">Cyan</label>
-    <label><input type="radio" id="yellow" name="q1" value="yellow">Yellow</label>
-    <label><input type="radio" id="red" name="q1" value="red">Red</label>
+    <label class="questions"><input type="radio" id="violet" name="q1" value="violet">Violet</label>
+    <label class="questions"><input type="radio" id="cyan" name="q1" value="cyan">Cyan</label>
+    <label class="questions"><input type="radio" id="yellow" name="q1" value="yellow">Yellow</label>
+    <label class="questions"><input type="radio" id="red" name="q1" value="red">Red</label>
     <br>
-    <div> </div>
-    <!-- <div id="q1ChoiceDiv"></div> -->
+    <div id="q1answer"> </div>
     <br>
     <br>
-    <label>
+    <label class="questions">
         2. What is one of the primary colors?
         <br>
         <br>
@@ -38,20 +38,34 @@
     <div> </div>
     <br>
     <br>
-    <label>
+    <label class="questions">
         3. What color is a combination of red and blue?
+        <br>
         <input id="q3" type="text">
     </label>
     <br>
     <div> </div>
     <br>
     <br>
-    <label>
+    <label class="questions">
         4. What is the maximum value a color can have?
         <input id="q4" type="number" min="0" max="255" step="15">
     </label>
     <br>
     <div> </div>
+    <br>
+    <br>
+    <label class="questions">
+        5. Which colors go together?
+        <input id="q5-1" type="checkbox" name="colorMatch">
+        Blue
+        <input id="q5-2" type="checkbox" name="colorMatch">
+        Green
+        <input id="q5-3" type="checkbox" name="colorMatch">
+        White
+        <input id="q5-4" type="checkbox" name="colorMatch">
+        Yellow
+    </label>
     <br>
     <br>
     <button>Submit Quiz</button>

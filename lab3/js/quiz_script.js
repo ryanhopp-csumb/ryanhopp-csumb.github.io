@@ -26,14 +26,17 @@ function shuffleQ1Choices() {
 }
 
 function gradeQuiz() {
-    let userAnswer1 = document.querySelector("input[name=q1]").value;
+    let userAnswer1 = document.querySelector("#q1").value;
     let userAnswer2 = document.querySelector("#q2").value;
     let userAnswer3 = document.querySelector("#q3").value;
     let userAnswer4 = document.querySelector("#q4").value;
-    if (userAnswer1 == "red") {
-        let answer1Txt = document.querySelector("");
+    
+    let answer1Txt = document.querySelector("#q1answer");
+    if (userAnswer1 == "Red") {
+        answer1Txt.innerText = "Your answer was correct";
     } else {
         //print red text
+        answer1Txt.innerText = "Your answer was wrong";
     }
 
     if (userAnswer2) {
